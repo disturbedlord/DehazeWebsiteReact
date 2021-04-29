@@ -127,6 +127,11 @@ class FinalModel extends React.Component {
           </div>
           {this.state.spinner ? (
             <div>
+              <div style={styles.status}>
+                <p>
+                  Status: <span style={styles.processing}>Processing</span>
+                </p>
+              </div>
               <div class="d-flex justify-content-center">
                 <div
                   class="spinner-border"
@@ -219,6 +224,17 @@ const styles = {
     justifyContent: "center",
     flexDirection: "row",
     alignItems: "center",
+  },
+  status: {
+    marginTop: "30px",
+    marginBottom: "30px",
+    marginLeft: "20px",
+    display: "flex",
+    justifyContent: "flex-start",
+    fontWeight: "bold",
+  },
+  processing: {
+    color: "#0a5ac4",
   },
 };
 

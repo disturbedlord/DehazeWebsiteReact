@@ -28,7 +28,9 @@ class OutputSection extends React.Component {
         <div>
           {/* Intensity Slider */}
           <div>
-            <div style={styles.status}>Status: {this.state.status}</div>
+            <div style={styles.status}>
+              Status: <span style={styles.success}>{this.state.status}</span>
+            </div>
           </div>
         </div>
         {this.props.spinner ? (
